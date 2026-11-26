@@ -65,19 +65,19 @@ public:
     bool empty() const { return size_ == 0; }
 
     // 修改
-    void push_back(const T &value)
+    void push_back(const T &value)//加到尾部
     {
         if (size_ == capacity_)
             grow();
         data_[size_] = value;
         ++size_;
     }
-    void pop_back()
+    void pop_back()//删除尾部
     {
         if (size_ > 0)
             --size_;
     }
-    void reserve(std::size_t new_cap)
+    void reserve(std::size_t new_cap)//赋一个容量
     {
         if (capacity_ >= new_cap) // 不比现在大，什么都不做
             return;

@@ -22,6 +22,8 @@
 | `arrayD2/` | D2 动态数组：`my_vector.h` + `my_vector.cpp` |
 | `listD3/` | D3 单链表：`my_list.h` + `my_list.cpp` |
 | `dlistD3/` | D3 双链表：`my_dlist.h` + `my_dlist.cpp` |
+| `stackD4/` | D4 栈：`array_stack.h` + `list_stack.h` |
+| `queueD4/` | D4 队列：`array_queue.h`（循环数组）+ `list_queue.h` |
 | `practiceD1.md` | D1 练习（复杂度题） |
 | `docs/` | 课表、进度、教学规则、作业单 |
 
@@ -36,8 +38,8 @@
 | D1 | 复杂度、内存布局、缓存局部性 | ✅ 完成（20/20） |
 | D2 | 数组与动态数组 | ✅ 完成（13 函数全通） |
 | D3 | 链表 | ✅ 完成（单链表 + 双链表） |
-| D4 | 栈、队列、双端队列 | ⬜ **下一步** |
-| D5 | 哈希表 | ⬜ |
+| D4 | 栈、队列、双端队列 | ✅ 完成（数组 + 链表各一版） |
+| D5 | 哈希表 | ⬜ **下一步** |
 | D6 | 递归、二叉树与遍历 | ⬜ |
 | D7 | 二叉搜索树（BST） | ⬜ |
 | D8 | 堆与优先队列 | ⬜ |
@@ -65,6 +67,7 @@
 | D2 | `arrayD2/my_vector.h` | 三要素（指针/size/capacity）、2 倍扩容、深拷贝、`reserve` |
 | D3 | `listD3/my_list.h` | 节点串接、`tail_` 优化、两种 `remove`（普通 / 虚拟头） |
 | D3+ | `dlistD3/my_dlist.h` | `prev` 指针、端部全 O(1)、`pop_back` 不需遍历 |
+| D4 | `stackD4/` + `queueD4/` | 栈 LIFO、队列 FIFO、循环数组绕圈、组合包装 |
 
 ## 分层要求
 
