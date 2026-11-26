@@ -108,6 +108,24 @@ public:
         if (head_ == nullptr) // ← 新增：删完变空
             tail_ = nullptr;  // 尾巴也要清空
     }
+    void pop_back()// 尾部删除节点
+    {
+        if (head_ == nullptr) return;
+        if (head_ == tail_)
+        {
+            delete head_;
+            head_ = tail_ = nullptr;
+            --size_;
+            return;
+        }
+        Node *cur = head_;
+        while(cur->next != tail_)
+           cur = cur->next;
+        delete tail_;
+        tail_ = cur;
+        tail_->next = nullptr;
+        --size_;
+    }
     void print() const // 打印链表
     {
         Node *cur = head_;
